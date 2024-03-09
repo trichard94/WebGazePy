@@ -10,6 +10,9 @@ export class Camera {
         this.lastCameraPosition = null
 
         this.cameraInstance = this.createCamera();
+        this.cameraInstance.angularSensibilityX = 700;
+        this.cameraInstance.angularSensibilityY = 700;
+        this.cameraInstance.wheelPrecision = 100;
     }
 
     createCamera() {

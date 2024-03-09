@@ -4,7 +4,7 @@ export class Light {
         this.direction = new BABYLON.Vector3(0, 1, 0);
         this.scene = scene;
 
-        this.intensity = 0.8;
+        this.intensity = 0.65;
         this.lightInstance = this.createLight();
     }
 

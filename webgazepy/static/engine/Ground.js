@@ -2,13 +2,12 @@ export class Ground {
     constructor(canvas, scene) {
         this.name = "ground";
         this.scene = scene;
-        this.width = 10;
-        this.height = 10;
+        this.width = 5;
+        this.height = 5;
         this.subdivision = 10
 
         this.options = {width: this.width, height: this.height, subdivisions: this.subdivision};
         this.material = new BABYLON.StandardMaterial('groundMaterial', this.scene);
-
         this.lightInstance = this.createGround();
     }
 
