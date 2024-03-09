@@ -14,7 +14,11 @@ export class SceneTemplate {
         camera.cameraInstance.setPosition(new BABYLON.Vector3(0, 3, -8));
         new IOHandler(scene);
         new Light(scene);
-        new Ground(scene);
+
+        //TODO: Setting
+        // new Ground(scene);
+        new BABYLON.Debug.AxesViewer(scene, 1);
+    
         return scene;
     }
 
