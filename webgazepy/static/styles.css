@@ -1,13 +1,37 @@
-html, body {
+body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
-canvas {
-    width: 100%;
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#renderCanvas {
+    flex: 1;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 100%;
+}
+
+.ui-panel {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+/* Responsive Styling */
+@media (min-width: 769px) {
+    .container {
+        flex-direction: row;
+    }
+    #renderCanvas {
+        width: 70%; 
+    }
+    .ui-panel {
+        width: 30%;
+    }
 }
